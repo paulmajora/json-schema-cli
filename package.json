@@ -1,5 +1,5 @@
 {
-  "name": "js-cli",
+  "name": "jso-cli",
   "version": "1.0.0",
   "description": "Generate JSON schema to an output file",
   "main": "index.js",
