@@ -2,7 +2,10 @@
   "name": "jso-cli",
   "version": "1.0.0",
   "description": "Generate JSON schema to an output file",
-  "main": "index.js",
+  "main": "./jso-cli.js",
+  "bin": {
+    "jso-cli": "bin/jso-cli.js"
+  },
   "dependencies": {
     "command-line-args": "^5.1.1",
     "generate-schema": "^2.6.0"
@@ -10,6 +13,10 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulmajora/json-schema-cli.git"
   },
   "author": "Paul Majora <paulmajora@gmail.com>",
   "license": "ISC"
