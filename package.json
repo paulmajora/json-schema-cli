@@ -1,6 +1,6 @@
 {
   "name": "jso-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate JSON schema to an output file",
   "main": "./jso-cli.js",
   "bin": {
