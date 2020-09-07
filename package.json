@@ -1,6 +1,6 @@
 {
   "name": "jso-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Generate JSON schema to an output file",
   "main": "./bin/jso-cli.js",
   "bin": {
@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "command-line-args": "^5.1.1",
-    "fs-extra": "^9.0.1",
     "generate-schema": "^2.6.0"
   },
   "devDependencies": {},

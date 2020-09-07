@@ -1,6 +1,6 @@
-const generateSchema = require('generate-schema');
 const fs = require('fs');
 const path = require('path');
+const generateSchema = require('generate-schema');
 const optionDefinitions = [
     { name: 'output', alias: 'o', type: String },
     { name: 'data', alias: 'd', type: String },
