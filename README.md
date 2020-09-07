@@ -1,4 +1,4 @@
-# ajv-cli
+# jso-cli
 
 ## Contents
 
