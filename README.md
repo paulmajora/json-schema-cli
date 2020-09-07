@@ -25,3 +25,10 @@ jso-cli -d ./valid.input.json -o ./output.schema.json
 
 ##### `-d` - JSON data
 ##### `-o` - Output file name of generated JSON Schema
+
+## You can then validate data with the schema using [ajv-cli](https://www.npmjs.com/package/ajv-cli)
+
+```sh
+ajv-cli validate -d ./valid.input.json -s ./output.schema.json
+ajv-cli validate -d ./test.input.json -s ./output.schema.json
+```
