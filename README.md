@@ -18,7 +18,7 @@ npm install -g jso-cli
 This command generates JSON schema files from any valid JSON File
 
 ```sh
-npx jso-cli -d ./valid.input.json -o ./output.schema.json
+jso-cli -d ./valid.input.json -o ./output.schema.json
 ```
 
 #### Parameters
