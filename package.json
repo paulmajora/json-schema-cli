@@ -1,0 +1,16 @@
+{
+  "name": "json-schema-cli",
+  "version": "1.0.0",
+  "description": "Generate JSON schema to an output file",
+  "main": "index.js",
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "generate-schema": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Majora <paulmajora@gmail.com>",
+  "license": "ISC"
+}
