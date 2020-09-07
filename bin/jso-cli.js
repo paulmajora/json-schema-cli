@@ -9,6 +9,7 @@ var optionDefinitions = [
     { name: 'output', alias: 'o', type: String },
     { name: 'data', alias: 'd', type: String }
 ];
+
 var commandLineArgs = require('command-line-args');
 var options = commandLineArgs(optionDefinitions);
 var validData = JSON.parse(
