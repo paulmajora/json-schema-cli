@@ -1,16 +1,16 @@
-const fs = require('fs');
-const path = require('path');
-const generateSchema = require('generate-schema');
-const optionDefinitions = [
+var fs = require('fs');
+var path = require('path');
+var generateSchema = require('generate-schema');
+var optionDefinitions = [
     { name: 'output', alias: 'o', type: String },
     { name: 'data', alias: 'd', type: String },
 ];
-const commandLineArgs = require('command-line-args');
-const options = commandLineArgs(optionDefinitions);
-const validData = JSON.parse(
+var commandLineArgs = require('command-line-args');
+var options = commandLineArgs(optionDefinitions);
+var validData = JSON.parse(
     fs.readFileSync(options.data, 'utf8')
 );
-const ensureDirectoryExistence = (filePath) => {
+var ensureDirectoryExistence = (filePath) => {
   var dirname = path.dirname(filePath);
   if (fs.existsSync(dirname)) {
     return true;
@@ -21,6 +21,6 @@ const ensureDirectoryExistence = (filePath) => {
 
 
 
-const schema = generateSchema.json('Schema', validData);
+var schema = generateSchema.json('Schema', validData);
 ensureDirectoryExistence(options.output);
 fs.writeFileSync(options.output, JSON.stringify(schema, null, 4));
